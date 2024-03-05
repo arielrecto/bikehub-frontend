@@ -1,3 +1,5 @@
+import { Colors } from "$lib/types/Colors";
+
 export enum ButtonSize {
     XS = 'btn-xs',
     SM = 'btn-sm',
@@ -6,10 +8,10 @@ export enum ButtonSize {
 }
 
 export enum ButtonVariant {
-    NEUTRAL = 'btn-neutral',
-    PRIMARY = 'btn-primary',
-    SECONDARY = 'btn-secondary',
-    ACCENT = 'btn-accent',
+    NEUTRAL = `btn-${Colors.NEUTRAL}`,
+    PRIMARY = `btn-${Colors.PRIMARY}`,
+    SECONDARY = `btn-${Colors.SECONDARY}`,
+    ACCENT = `btn-${Colors.ACCENT}`,
     GHOST = 'btn-ghost',
     LINK = 'btn-link',
 }
