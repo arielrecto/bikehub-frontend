@@ -5,12 +5,13 @@
 	export let size: CheckboxSize = CheckboxSize.SM;
 	export let variant: CheckboxVariant | undefined = undefined;
 	export let formControl: boolean = true;
+	export let controlWidthClass = 'w-52';
 
 	$: checkboxClass = `checkbox ${variant} ${size}`;
 </script>
 
 {#if formControl}
-	<div class="form-control w-52">
+	<div class={`form-control ${controlWidthClass}`}>
 		<label class="cursor-pointer label">
 			<span class="label-text">{label}</span>
 			<input type="checkbox" class={checkboxClass} />
