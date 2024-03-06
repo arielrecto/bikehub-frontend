@@ -5,7 +5,10 @@
 	export let size: CheckboxSize = CheckboxSize.SM;
 	export let variant: CheckboxVariant | undefined = undefined;
 	export let formControl: boolean = true;
-	export let controlWidthClass = 'w-52';
+
+	let controlWidthClass: string = 'w-52';
+
+	export { controlWidthClass as class };
 
 	$: checkboxClass = `checkbox ${variant} ${size}`;
 </script>
