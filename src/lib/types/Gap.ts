@@ -1,5 +1,6 @@
 export enum ContainerGap {
     NONE = 'gap-0',
+    XXS = 'gap-2',
     XS = 'gap-4',
     SM = 'gap-6',
     MD = 'gap-8',

@@ -1,1 +1,0 @@
-<button class="btn">Another button but separte component</button>

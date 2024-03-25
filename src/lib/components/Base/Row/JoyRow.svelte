@@ -1,24 +1,17 @@
 <script lang="ts">
 	import { ContainerGap } from '$lib/types/Gap';
 	import { ContainerPadding } from '$lib/types/Padding';
-	import { BorderRounded } from '$lib/types/Round';
 
 	let clazz: string = '';
 
-	export let padding: ContainerPadding = ContainerPadding.XS;
+	export let padding: ContainerPadding = ContainerPadding.NONE;
 	export let gap: ContainerGap = ContainerGap.XS;
-	export let rounded: BorderRounded = BorderRounded.NONE;
-	export let col = false;
 
 	export { clazz as class };
 
 	let divClass = 'flex ';
 	$: {
-		if (col) {
-			divClass += 'flex-col';
-		}
-
-		divClass = `${divClass} ${padding} ${gap} ${rounded} ${clazz}`;
+		divClass = `${divClass} ${padding} ${gap} ${clazz}`;
 	}
 </script>
 
