@@ -12,14 +12,14 @@
 </script>
 
 <JoyContainer class="h-full justify-center items-center bg-primary" rounded={BorderRounded.LG}>
-	<JoyCard class="h-96 w-96" title="Let's Go!">
+	<JoyCard class="w-96" title="Let's Go!">
 		<JoyColumn gap={ContainerGap.XS} class="my-4">
 			<JoyInput placeholder="Username" bordered />
 			<JoyInput placeholder="Password" bordered />
 		</JoyColumn>
 
 		<JoyRow slot="actions">
-			<JoyAnchor outline variant={ButtonVariant.GHOST} label="Register" />
+			<JoyAnchor variant={ButtonVariant.GHOST} label="Register" />
 			<JoyButton variant={ButtonVariant.PRIMARY} label="Sign In" />
 		</JoyRow>
 	</JoyCard>
