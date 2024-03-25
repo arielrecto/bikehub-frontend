@@ -15,7 +15,7 @@
 	<JoyCard class="w-96" title="Let's Go!">
 		<JoyColumn gap={ContainerGap.XS} class="my-4">
 			<JoyInput placeholder="Username" bordered />
-			<JoyInput placeholder="Password" bordered />
+			<JoyInput type="password" placeholder="Password" bordered />
 		</JoyColumn>
 
 		<JoyRow slot="actions">

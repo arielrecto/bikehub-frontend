@@ -7,7 +7,7 @@
 </script>
 
 <JoyRow class="justify-between">
-	<JoyAnchor label="HOME" variant={ButtonVariant.GHOST} href="/" />
+	<JoyAnchor label="BikeHub" variant={ButtonVariant.GHOST} href="/" />
 	<JoyRow gap={ContainerGap.XXS}>
 		<JoyButton label="Profile" variant={ButtonVariant.GHOST} />
 		<JoyAnchor label="Sign In" variant={ButtonVariant.GHOST} href="/sign-in" />
