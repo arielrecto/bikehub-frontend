@@ -1,12 +1,12 @@
 <script lang="ts">
+	import MapWidget from '$lib/components/Advanced/Leaflet/LeafletMapWidget.svelte';
 	import JoyContainer from '$lib/components/Base/Container/JoyContainer.svelte';
 	import JoyRow from '$lib/components/Base/Row/JoyRow.svelte';
 	import { ContainerPadding } from '$lib/types/Padding';
 </script>
 
 <!-- @TODO Leaflet Map -->
-<!-- Move to another component -->
-<div class="landing-bg"></div>
+<MapWidget />
 
 <!-- Posts Container -->
 <JoyContainer col padding={ContainerPadding.LG}>
@@ -32,10 +32,3 @@
 		</JoyContainer>
 	{/each}
 </JoyContainer>
-
-<style lang="postcss">
-	.landing-bg {
-		background-image: url('$lib/images/landing-page-bg.jpg');
-		@apply bg-center bg-cover bg-no-repeat flex h-96 rounded-lg bg-primary;
-	}
-</style>
